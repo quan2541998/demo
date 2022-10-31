@@ -1,0 +1,96 @@
+<div class="wrapper">
+    <div class="app-nav-menu-left">
+        <app-nav-menu-left></app-nav-menu-left>
+    </div>
+    <div class="content_right">
+        <div class="content_right_header">
+            <app-content-right-header></app-content-right-header>
+        </div>
+        <div class="content_right_body">
+            <div class="content_right_body_title">
+                <div class="button">
+                    <img src="../../../assets/image/Left.svg" alt="Left">
+                </div>
+                <div class='content_right_body_title_center'>
+                    <h1>LESSON 2</h1>
+                    <h2>Tên chủ đề của Unit 2</h2>
+                    <div class="content_right_body_title_center-complete">
+                        <img src="../../../assets/image/Unlock.svg" alt="">
+                        <p>Completed</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <img src="../../../assets/image/Right.svg" alt="Right">
+                </div>
+            </div>
+            <div class="content_right_body_center">
+                <div class="content_right_body_center_left">
+                    <div class="content_right_body_center_left_item" *ngFor="let item of data">
+                        <div class="content_right_body_center_left_item_title">
+                            <h1>{{item.title}}</h1>
+                        </div>
+                        <div class="information">
+                            <div>
+                                <img src="../../../assets/image/infoIcon.svg" alt="">
+                            </div>
+                            <p>{{item.describe}}</p>
+                        </div>
+                        <h3>{{item.practice}}</h3>
+                        <div class="content_right_body_center_left_item_body">
+                            <div class="content_right_body_center_left_item_body_percent">
+                                <div class="circle">
+                                    <svg class="under" width="142" height="142">
+                                        <circle cx="71" cy="71" r="52" id="bot" />
+                                        <circle cx="71" cy="71" r="52" id="top" />
+                                    </svg>
+
+                                    <h1>{{item.percent}}%</h1>
+                                </div>
+                            </div>
+                            <div class="content_right_body_center_left_item_body_info">
+                                <div class="content_right_body_center_left_item_body_info_item">
+                                    <div class="content_right_body_center_left_item_body_icon">
+                                        <img src="../../../assets/image/Book.svg" alt="">
+                                    </div>
+                                    <div class="content_right_body_center_left_item_body_description">
+                                        <h2>Book</h2>
+                                        <span>Tequila Mockingbird</span>
+                                    </div>
+                                </div>
+                                <div class="content_right_body_center_left_item_body_info_item">
+                                    <div class="content_right_body_center_left_item_body_icon">
+                                        <img src="../../../assets/image/Youtube.svg" alt="">
+                                    </div>
+                                    <div class="content_right_body_center_left_item_body_description">
+                                        <h2>Video</h2>
+                                        <span>Improve your cohesion and coherence</span>
+                                    </div>
+                                </div>
+                                <div class="content_right_body_center_left_item_body_info_item">
+                                    <div class="content_right_body_center_left_item_body_icon">
+                                        <img src="../../../assets/image/Test.svg" alt="">
+                                    </div>
+                                    <div class="content_right_body_center_left_item_body_description">
+                                        <h2>Mock test</h2>
+                                        <span>IELTS Mock Exam No. 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content_right_body_center_right">
+                    <div class="content_right_body_center_right_item" *ngFor="let item of items ">
+                        <div class="content_right_body_center_right_item_image">
+                            <img [src]=" item.img" [alt]="item.title">
+                        </div>
+                        <div class="notify" *ngIf="item.notify">{{item.valueNotify}}</div>
+                        <h1>{{item.title}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

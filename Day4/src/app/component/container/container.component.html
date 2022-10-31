@@ -1,0 +1,139 @@
+<div class="wrapper">
+    <div class="app-nav-menu-left">
+        <app-nav-menu-left></app-nav-menu-left>
+    </div>
+    <div class="content_right">
+        <div class="content_right_header">
+            <app-content-right-header></app-content-right-header>
+        </div>
+        <div class="content_right_body">
+            <div class="content_right_body_title">
+                <div class="button">
+                    <img src="../../../assets/image/Left.svg" alt="Left">
+                </div>
+                <div class='content_right_body_title_center'>
+                    <h1>LESSON 2</h1>
+                    <h2>Tên chủ đề của Unit 2</h2>
+                    <div class="content_right_body_title_center-complete">
+                        <img src="../../../assets/image/Unlock.svg" alt="">
+                        <p>Completed</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <img src="../../../assets/image/Right.svg" alt="Right">
+                </div>
+            </div>
+            <div class="content_right_body_center">
+                <div class="content_right_body_center_left">
+                    <div class="class_forum_prompt">
+                        <div class="title">
+                            <img src="../../../assets/image/ElipGreen.svg" alt="">
+                            <h1>Class Forum Prompt:</h1>
+                        </div>
+                        <h1>Let’s practice your “beat-boxing”!
+                        </h1>
+                        <p>This week, your forum assignment is to post a video response of your speaking to one of the
+                            two prompts below. Be sure to practice before recording and pay special attention to your
+                            verbs and "beat-boxing" ending sounds as you speak. You should be using a lot of past tense
+                            verbs in your talk! ending sounds as you speak. You should be using a lot of past tense
+                            verbs in your talk!
+                        </p>
+                        <div class="image">
+                            <div class="image_item">
+                                <div class="image_item_img">
+                                    <img src="../../../assets/image/Baby1.svg" alt="">
+                                </div>
+                                <p class="description">
+                                    1.) Talk about a time you felt embarrassed
+                                </p>
+                            </div>
+                            <div class="image_item">
+                                <div class="image_item_img">
+                                    <img src="../../../assets/image/Baby1.svg" alt="">
+                                </div>
+                                <p class="description">
+                                    1.) Talk about a time you felt embarrassed
+                                </p>
+                            </div>
+                            <div class="image_item">
+                                <div class="image_item_img">
+                                    <img src="../../../assets/image/Baby1.svg" alt="">
+                                </div>
+                                <p class="description">
+                                    3.) Talk about a wrong decision you regret making.
+                                </p>
+                            </div>
+                            <div class="image_item">
+                                <div class="image_item_img">
+                                    <img src="../../../assets/image/Baby1.svg" alt="">
+                                </div>
+                                <p class="description">
+                                    4.) Describe a time you did something healthy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer">Congratulations, you have completed the assignment 🎉</div>
+                    </div>
+                    <div class="your_submission">
+                        <div class="title">
+                            <img src="../../../assets/image/ElipGreen.svg" alt="">
+                            <h1>Your submission</h1>
+                        </div>
+                        <div class="content">
+                            <div class="content_info">
+                                <div class="content_info_img">
+                                    <img src="../../../assets/image/Avatar2.jpg" alt="Avatar2">
+                                </div>
+                                <div class="content_info_name">
+                                    <h3 class="username">Tên tài khoản</h3>
+                                    <p class="update">Uploaded: 16:20 - 06/09/2021</p>
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p>3 giờ sáng ngày hôm đấy, tôi và người vợ sắp cưới đi lang thang trên phố sau bữa tiệc
+                                    tàn ở quán bar mà cô ấy làm việc. Thường thì sau những buổi nhậu nhẹt thâu đêm, cô
+                                    gái làm tôi luôn say đắm sẽ dắt tôi qua những góc nhỏ của phố cổ Hà Nội. Tôi gặp Thu
+                                    vào cuối mùa Hạ năm ngoài tại quán bar mà cô ấy đang làm bartender....<span>View
+                                        More</span></p>
+                            </div>
+                            <div class="statistical">
+                                <div class="star">
+                                    <div class="star_img">
+                                        <img src="../../../assets/image/StarYellow.svg" alt="StarYellow">
+                                    </div>
+                                    <span>2.8K</span>
+                                </div>
+                                <span class="comment">823 comments</span>
+                            </div>
+                            <div class="footer">
+                                <div class="iconList_left">
+                                    <div class="starNofill">
+                                        <img src="../../../assets/image/StarNofill.svg" alt="">
+                                        <span>Favorite</span>
+                                    </div>
+                                    <div class="comment">
+                                        <img src="../../../assets/image/Comment.svg" alt="">
+                                        <span>Comment</span>
+                                    </div>
+                                </div>
+                                <div class="iconList_Right">
+                                    <img src="../../../assets/image/3cham.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_right_body_center_right">
+                    <div class="content_right_body_center_right_item" *ngFor="let item of items ">
+                        <div class="content_right_body_center_right_item_image">
+                            <img [src]=" item.img" [alt]="item.title">
+                        </div>
+                        <div class="notify" *ngIf="item.notify">{{item.valueNotify}}</div>
+                        <h1>{{item.title}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

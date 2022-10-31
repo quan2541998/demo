@@ -1,0 +1,161 @@
+.content_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content_nav_left {
+  .content_nav_left_title {
+    color: #b0d9ff;
+    font-size: 22px;
+  }
+  .content_nav_left_des {
+    margin-left: 37px;
+    color: white;
+    font-size: 15px;
+  }
+}
+
+.content_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  z-index: 100;
+
+  .content_nav_right_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    span {
+      color: #c2c2c2;
+      font-size: 1.6rem;
+    }
+
+    &.calendar {
+      width: 82px;
+    }
+
+    &.coin {
+      width: 61px;
+    }
+
+    &.notify {
+      width: 93px;
+      display: flex;
+      gap: 26px;
+    }
+  }
+
+  & .notify_bell {
+    position: absolute;
+    top: -7px;
+    right: 3px;
+    color: white;
+    background-color: red;
+    width: 22px;
+    height: 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 1px solid white;
+  }
+}
+
+.content_nav_right_info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  position: relative;
+  margin-left: 8px;
+  transition: all 0.2s ease;
+  padding-right: 9px;
+  // transform: translateX(16px);
+  &:hover {
+    background: #1a3662;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 18.5px;
+    border-top-right-radius: 18.5px;
+  }
+
+  & img {
+    width: 48px;
+    height: 48px;
+    border-radius: 18px;
+  }
+  & .content_nav_right_info_content {
+    color: white;
+
+    & h1 {
+      color: #dbdbdb;
+      font-size: 1.4rem;
+    }
+  }
+
+  & .down {
+    width: 12px;
+    height: 12px;
+  }
+
+  & .info-down {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    left: 0px;
+    top: 48px;
+    // padding-top: 50px;
+    border-bottom-left-radius: 18.5px;
+    border-bottom-right-radius: 18.5px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    padding-bottom: 10px;
+    display: none;
+
+    & .icon {
+      width: 28px;
+      height: 28px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      padding-left: 9px;
+      background: #1a3662;
+      height: 41px;
+      transition: all 0.2s ease;
+
+      & span {
+        font-size: 15px;
+        color: #a8b7cf;
+        flex: 1;
+      }
+
+      &:hover {
+        background: #254b86;
+      }
+    }
+  }
+
+  &:hover .info-down {
+    display: block;
+    opacity: 1;
+    background: #1a3662;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  }
+}

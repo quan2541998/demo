@@ -1,0 +1,105 @@
+.wrapper {
+  width: 1024px;
+  height: 768px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+
+  & .container_right {
+    flex: 1;
+    padding: 18px 37px 56px 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+    background: url(../../../assets/image/Background.svg);
+
+    & .header {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    & .content {
+      width: 846px;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      gap: 9px;
+      background: rgba(17, 46, 80, 0.6);
+      border-radius: 18px;
+      padding: 35px;
+
+      & .content-center {
+        & .title-content-center-h1 {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 116%;
+          color: #ffffff;
+          margin-bottom: 44px;
+        }
+        span {
+          font-size: 26px;
+        }
+
+        .center {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          & .tryOut {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 35px;
+            align-items: center;
+            background: #7390b2;
+            border: 0.5px solid #1c4d86;
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            width: 352px;
+            height: 452px;
+
+            & .tryOut-title {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 116%;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+          & .getOffers {
+            width: 352px;
+            height: 452px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 12px;
+            align-items: right;
+            background: linear-gradient(
+              206.53deg,
+              rgba(43, 84, 151, 0.8) 2.95%,
+              rgba(56, 90, 168, 0.8) 45.32%,
+              rgba(37, 37, 107, 0.8) 91.34%
+            );
+            box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+
+            & .getOffers-title {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 40px;
+              line-height: 116%;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

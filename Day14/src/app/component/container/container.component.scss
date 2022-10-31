@@ -1,0 +1,267 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+
+  & .container_right {
+    flex: 1;
+    padding: 18px 16px 39px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background: url(../../../assets/image/Background.svg);
+
+    & .header {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      app-content-right-header {
+        width: 100%;
+      }
+    }
+    & .content {
+      padding: 10px;
+      background: rgba(17, 46, 80, 0.6);
+      border-radius: 18px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+
+      .content_top {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        & .content_top_title {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: white;
+
+          & .content_top_title_total {
+            font-size: 22px;
+            line-height: 116%;
+            font-family: ".AG Fsel";
+            font-style: normal;
+            font-weight: 400;
+          }
+          & .content_top_title_score {
+            font-family: ".AG Fsel";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 116%;
+            margin-left: 5px;
+          }
+        }
+        & .content_top_center {
+          display: flex;
+          justify-content: space-between;
+
+          & .content_top_center_left {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            gap: 30px;
+            width: 342px;
+            height: 282px;
+            background: rgba(17, 46, 80, 0.8);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 18px;
+
+            & .content_top_center_left_title {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 21px;
+              color: #f0f0f0;
+              display: flex;
+              justify-content: flex-start;
+              width: 100%;
+            }
+            & .content_top_center_left_score {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 120px;
+              line-height: 116%;
+              color: #5fbd00;
+
+              text-shadow: 0px 0px 20px rgba(0, 255, 25, 0.24),
+                0px 0px 50px rgba(59, 255, 220, 0.27),
+                0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px #302e91;
+            }
+          }
+          & .content_top_center_right {
+            padding: 20px 10px 20px 20px;
+            width: 499px;
+            height: 282px;
+            background: rgba(17, 46, 80, 0.8);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+
+            & .content_top_center_right_title {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 21px;
+              color: #f0f0f0;
+            }
+
+            & .content_top_center_right_items {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              & .content_top_center_right_item {
+                & .content_top_center_right_item_title {
+                  font-family: "AG Fsel 2022";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 25px;
+                  line-height: 26px;
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 8px;
+                  color: #0085ff;
+                }
+                & .content_top_center_right_item_percent {
+                  display: flex;
+                  gap: 8px;
+                  justify-content: flex-start;
+                  align-items: center;
+
+                  & .item_percent_parrent {
+                    width: 420px;
+                    height: 52px;
+                    left: 521px;
+                    top: 238.92px;
+                    background: #002252;
+                    border-radius: 5px;
+                    display: flex;
+
+                    padding: 4px;
+
+                    & .item_percent_children {
+                      width: 412px;
+                      height: 100%;
+                      display: flex;
+                      gap: 5px;
+
+                      & .item_percent_children_item {
+                        background: #a5d4ff;
+                        border-radius: 3px;
+                        width: 15px;
+                        height: 100%;
+                      }
+                    }
+                  }
+
+                  & .item_score {
+                    font-family: "AG Fsel 2022";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 31px;
+                    text-align: center;
+                    color: #9cc869;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .content_bottom {
+        & .content-center {
+          padding: 23px 23px 23px 34px;
+          background: #102b4a;
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+          border-radius: 18px;
+
+          & .content-center-title {
+            margin-bottom: 21px;
+            & .title-content-center-h2 {
+              font-family: ".AG Fsel";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 116%;
+              color: #ffffff;
+            }
+          }
+
+          & .table {
+            margin-bottom: 20px;
+            table {
+              width: 789px;
+              color: white;
+              text-align: center;
+              font-size: 25px;
+              justify-items: center;
+              line-height: 57px;
+            }
+            table,
+            th,
+            td {
+              border: 2px solid #ffffff;
+            }
+            th,
+            td {
+              height: 57px;
+              vertical-align: middle;
+            }
+
+            .table_title {
+              background: linear-gradient(180deg, #178cfa 0%, #005cc1 100%);
+            }
+          }
+
+          & .content-center-result {
+            font-family: ".AG Fsel";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 116%;
+            align-items: center;
+            color: #aeff5e;
+          }
+        }
+      }
+    }
+    & .footer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      button {
+        width: 190px;
+        height: 50px;
+        background: linear-gradient(
+          152.03deg,
+          #1890ff -19.27%,
+          #0069cc 109.91%
+        );
+        box-shadow: 6px 4px 25px rgba(24, 144, 255, 0.2);
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        color: white;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 20px;
+      }
+    }
+  }
+}

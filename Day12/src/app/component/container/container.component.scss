@@ -1,0 +1,180 @@
+.wrapper {
+  width: 1024px;
+  background-color: #0d243f;
+  display: flex;
+  position: relative;
+
+  & .container_right {
+    flex: 1;
+    padding: 18px 16px 0px 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    background: url(../../../assets/image/Background.svg);
+    overflow: hidden;
+
+    & .header {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      app-content-right-header {
+        width: 100%;
+      }
+    }
+    & .content {
+      width: 100%;
+      height: 100%;
+      & .content_title {
+        text-align: center;
+        & .content_title_h1 {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 26px;
+          letter-spacing: -0.05em;
+          color: #90e7ff;
+
+          span {
+            color: #ff8432;
+          }
+        }
+        & .content_title_p {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 17px;
+          color: #fefefe;
+          margin-top: 10px;
+        }
+      }
+      & .content_earth {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        & .earth_one {
+          top: 57px;
+          left: 80px;
+          position: absolute;
+          & .earth_one-image {
+            position: relative;
+            & .earth_one-line {
+              position: absolute;
+              top: 0px;
+              left: 130px;
+            }
+            & .rocket_one {
+              position: absolute;
+              top: -59px;
+              left: 233px;
+              transform: rotate(-2deg);
+            }
+
+            & .earth_one-mini {
+              position: absolute;
+              top: 10px;
+              left: 272px;
+            }
+          }
+          & .earth_one-unit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        & .earth_two {
+          position: absolute;
+          top: 73px;
+          left: 525px;
+          & .earth_two-image {
+            position: relative;
+            & .earth_two-line {
+              right: 12px;
+              top: 92px;
+              position: absolute;
+            }
+          }
+
+          & .earth_two-unit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        & .earth_three {
+          position: absolute;
+          top: 304px;
+          left: 361px;
+
+          & .earth_three-image {
+            position: relative;
+            & .earth_three-line {
+              position: absolute;
+              top: 76px;
+              right: 145px;
+            }
+            & .earth_three-mini {
+              position: absolute;
+              top: 80px;
+              right: 246px;
+            }
+          }
+          & .earth_three-unit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-10px, 45px);
+
+            img {
+              width: 23px;
+              height: 23px;
+            }
+          }
+        }
+
+        & .earth_four {
+          position: absolute;
+          top: 423px;
+          left: 151px;
+          & .earth_four-image {
+            position: relative;
+            & .earth_four-line {
+              position: absolute;
+              top: 160px;
+              left: 86px;
+            }
+            & .earth_four-mini {
+              position: absolute;
+              top: 230px;
+              left: 260px;
+            }
+          }
+          & .earth_four-unit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-70px, 20px);
+          }
+        }
+        & .earth_five {
+          position: absolute;
+          top: 588px;
+          left: 615px;
+        }
+
+        & .earth-unit-title {
+          font-family: ".AG Fsel";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
